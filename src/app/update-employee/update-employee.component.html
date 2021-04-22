@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Update Employee</h1>
+    <a href="#" routerLink="/employees" class="btn btn-primary">Back</a>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form-group">
+            <label for="firstName">FirstName</label>
+            <input formControlName="firstName" id="firstName" required type="text" [(ngModel)]="employee.firstName" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="lastName">LastName</label>
+            <input formControlName="lastName" id="lastName"
+             type="text" [(ngModel)]="employee.lastName" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="emailId">EmailId</label>
+            <input formControlName="emailId" id="emailId"
+             type="text" [(ngModel)]="employee.emailId" class="form-control" required>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Update</button>
+    </form>
+</div>
