@@ -15,10 +15,8 @@
             <td>{{employee.emailId}}</td>
             <td>
                 <button (click)="updateEmployee(employee.id)" class="btn btn-primary">Update</button>
-
                 <a href="#" [routerLink]="['/employee/', employee.id]" class="btn btn-info">Details</a>
                 <button  (click)="deletePost(employee.id)" class="btn btn-danger">Delete</button>
-
             </td>
         </tr>
     </tbody>
